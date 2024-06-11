@@ -12,7 +12,9 @@ const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} =useCon
         <img src={assets.boy } alt="user" />
       </div>
       <div className="main-container">
-    
+
+        {!showResult
+        ?<>
         <div className="greet">
             <p><span>Hello , Mourad .  </span>  </p>
             <p>How I Can Help you today ?</p>
@@ -45,6 +47,13 @@ const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} =useCon
 
              </div>
         </div>
+    
+        
+        </>
+        : <div className='result'> 
+
+        </div>
+        }
     
         
         <div className="main-bottom">
